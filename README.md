@@ -1,7 +1,7 @@
 # LSB-Steganography-Toolkit
 Easy way to hide secret messages in images. Real-time capacity tracking and quality analysis 
     
-## 🌟 Features
+## Features
 ![Application Screenshot](readmeImages/1.png)
 
 ![Application Screenshot](readmeImages/2.png)
@@ -45,7 +45,7 @@ pip install PyQt6 Pillow numpy
 python main.py
 ```
 
-## 📖 How to Use
+## How to Use
 
 ### Hiding a Message
 1. Go to the "Steganography" tab
@@ -72,7 +72,7 @@ python main.py
    - SSIM (Structural Similarity Index)
    - Quality assessment and detailed metrics
 
-## 📊 Understanding Capacity
+## Understanding Capacity
 
 As you type your message:
 - **Message Size**: Current size of your text
@@ -82,7 +82,7 @@ As you type your message:
   - Orange: High usage (75-90%)
   - Red: Critical usage (>90%)
 
-## 🔧 Technical Details
+## Technical Details
 
 ### LSB Bit Options
 - **1 LSB**: Maximum security, least capacity
@@ -95,7 +95,7 @@ As you type your message:
 - **Output Images**: PNG
 - **Text Encoding**: UTF-8
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Security Warning**: For high-security applications, consider encrypting your message before embedding
 - **Image Quality**: Higher LSB values may cause visible image degradation
@@ -115,17 +115,17 @@ If you encounter import errors, ensure all dependencies are installed:
 pip install PyQt6 Pillow numpy
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with PyQt6 for the graphical interface
 - Uses Pillow for image processing
 - Implements standard LSB steganography algorithms
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
