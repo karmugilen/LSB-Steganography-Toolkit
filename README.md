@@ -31,8 +31,8 @@ Easy way to hide secret messages in images. Real-time capacity tracking and qual
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/stegosuite-pro.git
-cd stegosuite-pro
+git clone https://github.com/karmugilen/LSB-Steganography-Toolkit.git
+cd LSB-Steganography-Toolkit
 ```
 
 2. **Install required packages:**
@@ -131,4 +131,5 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ---
 
-**StegoSuite Pro** - Hide in plain sight with professional-grade steganography tools!
+**
+LSB-Steganography-Toolkit** - Hide in plain sight with professional-grade steganography tools!
