@@ -121,7 +121,4 @@ pip install PyQt6 Pillow numpy
 
 Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
 
----
 
-**
-LSB-Steganography-Toolkit** - Hide in plain sight with professional-grade steganography tools!
