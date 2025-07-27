@@ -111,10 +111,6 @@ If you encounter import errors, ensure all dependencies are installed:
 pip install PyQt6 Pillow numpy
 ```
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
 - Built with PyQt6 for the graphical interface
