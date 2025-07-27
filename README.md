@@ -19,7 +19,7 @@ Easy way to hide secret messages in images. Real-time capacity tracking and qual
 - **Visual Warnings**: Color-coded alerts when approaching capacity limits
 - **Progress Tracking**: Visual feedback during encoding operations
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
