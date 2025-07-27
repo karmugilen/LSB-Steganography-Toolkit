@@ -21,8 +21,8 @@ class LSBSteganography:
             total_pixels = width * height
             # Each pixel can store 3 * lsb_bits bits (R, G, B channels)
             max_bits = total_pixels * 3 * lsb_bits
-            # Subtract 8 bits for null terminator
-            return (max_bits // 8) - 1
+            # Subtract bits for markers and null terminator
+            return (max_bits // 8) - 1 - 22
         except Exception:
             return 0
 
@@ -34,6 +34,9 @@ class LSBSteganography:
                 img = img.convert('RGB')
             encoded = img.copy()
             width, height = img.size
+            
+            # Add start and end markers
+            message = f"zxy_start{message}zxy_end"
             
             # Add null terminator
             message += chr(0)
@@ -100,14 +103,24 @@ class LSBSteganography:
             
             # Convert bits to characters
             chars = [bits[i:i+8] for i in range(0, len(bits), 8)]
-            message = ''
+            decoded_string = ''
             for c in chars:
                 if len(c) == 8:  # Ensure we have complete byte
                     byte = int(c, 2)
                     if byte == 0:
                         break
-                    message += chr(byte)
-            return message
+                    decoded_string += chr(byte)
+
+            # Find markers
+            start_marker = "zxy_start"
+            end_marker = "zxy_end"
+            start_index = decoded_string.find(start_marker)
+            end_index = decoded_string.find(end_marker)
+
+            if start_index != -1 and end_index != -1:
+                return decoded_string[start_index + len(start_marker):end_index]
+            
+            return ''
         except Exception as e:
             print(f"Decoding error: {e}")
             return ''
@@ -364,7 +377,7 @@ class MainWindow(QMainWindow):
                 elif percentage > 75:
                     self.capacity_percentage_label.setStyleSheet("color: orange; font-weight: bold;")
                 else:
-                    self.capacity_percentage_label.setStyleSheet("color: green;")
+                    self.capacity_percentage_label.setStyleSheet("color: white;")
             else:
                 self.capacity_percentage_label.setText("Usage: 0%")
                 self.capacity_percentage_label.setStyleSheet("color: black;")

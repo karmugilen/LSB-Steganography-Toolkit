@@ -2,7 +2,10 @@
 Easy way to hide secret messages in images. Real-time capacity tracking and quality analysis 
     
 ## 🌟 Features
+![Application Screenshot](readmeImages/1.png)
 
+![Application Screenshot](readmeImages/2.png)
+  
 ### Core Functionality
 - **Hide Messages**: Embed confidential text into PNG and BMP images
 - **Extract Messages**: Retrieve hidden messages from stego-images
