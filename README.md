@@ -77,10 +77,6 @@ python main.py
 As you type your message:
 - **Message Size**: Current size of your text
 - **Remaining**: Space left in the selected image
-- **Usage %**: Percentage of image capacity being used
-  - Green: Normal usage (<75%)
-  - Orange: High usage (75-90%)
-  - Red: Critical usage (>90%)
 
 ## Technical Details
 
