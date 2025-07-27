@@ -1,12 +1,6 @@
 # LSB-Steganography-Toolkit
 Easy way to hide secret messages in images. Real-time capacity tracking and quality analysis 
 
-# Lsb-Tool
-
-**Advanced LSB Steganography Application**
-
-Hide secret messages inside digital images with this powerful and easy-to-use steganography tool.
-
 ## 🌟 Features
 
 ### Core Functionality
