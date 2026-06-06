@@ -98,7 +98,7 @@ As you type your message:
 - **File Size**: Larger images can hide more data
 - **Backup**: Always keep original images when doing steganography experiments
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 - **"Message too large"**: Choose an image with higher capacity or reduce message size
